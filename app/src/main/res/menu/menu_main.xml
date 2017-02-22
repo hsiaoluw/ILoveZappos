@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu"
+    tools:context="com.example.hsiaoluw.databinding_example.MainActivity">
+
+
+    <item
+        android:id="@+id/app_bar_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_name"
+        android:title="Search"
+        android:orderInCategory="100"
+         />
+
+    <item
+        android:id="@+id/app_bar_cart"
+        android:actionViewClass="android.support.v7.widget.AppCompatButton"
+        android:title="Cart"
+        android:orderInCategory="102"
+        app:showAsAction="always" />
+
+
+
+</menu>

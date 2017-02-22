@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="3dp"
+    android:clickable="false"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="116dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            card_view:srcCompat="@drawable/common_full_open_on_phone"
+            android:id="@+id/CartItemView"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/qt"
+            android:layout_alignParentTop="true" />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_cart"
+            android:layout_alignTop="@+id/qt"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/brand_cart"
+            tools:textColor="@android:color/background_dark"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_marginStart="24dp" />
+
+        <TextView
+            android:text="                  Qt"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qt"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/spinner_cart"
+            android:layout_marginBottom="19dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_cart"
+            android:layout_below="@+id/brand_cart"
+            android:layout_alignStart="@+id/brand_cart" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price_cart"
+            tools:gravity="right"
+            android:layout_alignBaseline="@+id/product_cart"
+            android:layout_alignBottom="@+id/product_cart"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
